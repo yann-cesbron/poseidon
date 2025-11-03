@@ -1,0 +1,24 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "f055c251-870f-46c6-924e-536896d2f254")
+	(paper "A4")
+	(title_block
+		(date "2025-09-26")
+		(rev "1.0")
+		(company "Association Electromaker (yc)")
+		(comment 2 "Drone marin")
+	)
+	(lib_symbols)
+	(text "DRONE MARIN\nPOSEIDON\n\nExtremité arriere\nTurbine brusless & gouvernail"
+		(exclude_from_sim no)
+		(at 89.662 44.45 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "4d4347f7-d61c-451c-bc8c-848889611461")
+	)
+)

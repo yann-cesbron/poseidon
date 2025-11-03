@@ -1,0 +1,24 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "ed185f68-04e0-4f35-9661-a4e457b80815")
+	(paper "A4")
+	(title_block
+		(date "2025-09-26")
+		(rev "1.0")
+		(company "Association Electromaker (yc)")
+		(comment 2 "Drone marin")
+	)
+	(lib_symbols)
+	(text "DRONE MARIN\nPOSEIDON\n\nEmeteur RC & Ecran Video"
+		(exclude_from_sim no)
+		(at 75.946 43.688 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "dd30706d-0922-4ee4-bf78-97dfd6b0ca5a")
+	)
+)

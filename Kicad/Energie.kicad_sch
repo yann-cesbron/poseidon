@@ -1,0 +1,24 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "c281adb9-f3c3-46b6-80d4-6acd5d094119")
+	(paper "A4")
+	(title_block
+		(date "2025-09-26")
+		(rev "1.0")
+		(company "Association Electromaker (yc)")
+		(comment 2 "Drone marin")
+	)
+	(lib_symbols)
+	(text "  DRONE MARIN\n    POSEIDON\n\nMODULE central\nENERGIE et Pompe eau"
+		(exclude_from_sim no)
+		(at 63.754 38.1 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "94235e95-6b9b-43e1-81d6-47c52fbc41ad")
+	)
+)

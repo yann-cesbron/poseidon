@@ -1,0 +1,24 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "77b2c098-dda0-4441-9c8c-9e623b82a61b")
+	(paper "A4")
+	(title_block
+		(date "2025-09-26")
+		(rev "1.0")
+		(company "Association Electromaker (yc)")
+		(comment 2 "Drone marin")
+	)
+	(lib_symbols)
+	(text "DRONE MARIN\nPOSEIDON\n\nMODULE arriere\nRecepteur RC - servo direction - ESC commande turbine"
+		(exclude_from_sim no)
+		(at 134.874 42.418 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "f798c2b7-4b05-42dc-9cc2-d2325abcbc6b")
+	)
+)
