@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header {
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+#header h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#wifi-status {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+#map-container {
+    position: relative;
+    flex: 1;
+    width: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    background-color: #aad3df;
+    position: relative;
+    overflow: hidden;
+    touch-action: none;
+}
+
+.tile {
+    position: absolute;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    pointer-events: none;
+}
+
+#coordinates {
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+#zoom-level {
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#gps-status {
+    position: absolute;
+    bottom: 45px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+#server-status {
+    position: absolute;
+    bottom: 45px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.marker {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #ff4444;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #ecf0f1;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+#controls button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 100px;
+}
+
+#controls button:hover {
+    background: #2980b9;
+}
+
+#controls button:active {
+    transform: scale(0.98);
+}
+
+#area-controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 12px;
+}
+
+#area-info {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.area-btn {
+    background: #3498db;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    margin: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.area-btn:hover {
+    background: #2980b9;
+}
+
+.area-btn:active {
+    transform: scale(0.95);
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    background-color: #aad3df;
+    position: relative;
+    overflow: hidden;
+    touch-action: none;
+}
+
+/* Tuiles - en dessous du marqueur */
+.tile {
+    position: absolute;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    pointer-events: none;
+    z-index: 1;
+    /* En dessous du marqueur */
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #e53935;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+
+    margin: 15px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(229, 57, 53, 0.3);
+}
+
+.button-link:hover {
+    background-color: #552506;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(229, 57, 53, 0.4);
+}
+
+.app-link {
+    color: rgb(12, 184, 55);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px dashed rgba(224, 94, 94, 0.5);
+    border-radius: 8px;
+}
+
+.app-link:hover {
+    background-color: rgba(224, 94, 94, 0.1);
+}
+
+/* Marqueur GPS - toujours au-dessus */
+.marker {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 24px !important;
+    height: 24px !important;
+    background: #ff4444 !important;
+    border: 3px solid #fff !important;
+    border-radius: 50% !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+    z-index: 1000 !important;
+    /* Au-dessus de tout */
+    pointer-events: none !important;
+}
+
+/* Animation pulsante pour le marqueur */
+.marker::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ff4444;
+    animation: pulse 2s infinite;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    70% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
