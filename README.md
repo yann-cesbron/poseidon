@@ -1,4 +1,4 @@
-# poseidon
+# Poseidon
 Drone marin - projet pedagogique
 
 Dans le cadre de la Fête de la Science 2024, 
