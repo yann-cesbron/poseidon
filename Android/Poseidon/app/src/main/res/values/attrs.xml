@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Déclaration des attributs de style personnalisés pour les boutons -->
+    <attr name="materialButtonPrimaryStyle" format="reference" />
+    <attr name="materialButtonSecondaryStyle" format="reference" />
+</resources>

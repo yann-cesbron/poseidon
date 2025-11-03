@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Thème principal de votre application -->
+    <style name="Theme.Poseidon" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="materialButtonStyle">@style/Widget.App.Button.Primary</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.App.Button.Secondary</item> <!-- Nous allons réutiliser Secondary pour Outlined par exemple -->
+        <!-- Il n'y a pas d'attribut pour le "Tonal" par défaut, nous allons donc le définir différemment. Voir ci-dessous. -->
+    </style>
+
+    <!-- Style pour le "Bottom Sheet" avec coins arrondis -->
+    <style name="ShapeAppearance.App.BottomSheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">24dp</item>
+        <item name="cornerSizeTopRight">24dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <!-- Styles de boutons personnalisés -->
+
+    <!-- Style pour votre bouton primaire (hérite du bouton rempli/Filled par défaut) -->
+    <style name="Widget.App.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:layout_height">56dp</item>
+        <item name="colorPrimary">@color/blue_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Style pour votre bouton secondaire (hérite du bouton vide/Outlined par défaut) -->
+    <style name="Widget.App.Button.Secondary" parent="Widget.Material3.Button">
+        <item name="colorSecondary">@color/purple_500</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+    <!-- Style personnalisé pour les Chips avec un fond transparent de base -->
+    <style name="Widget.App.TransparentChip" parent="Widget.MaterialComponents.Chip.Action">
+        <!-- Cette ligne est la clé : elle force le fond du style à être transparent -->
+        <item name="chipBackgroundColor">@android:color/transparent</item>
+        <!-- Optionnel : assure un texte lisible sur n'importe quel fond -->
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+</resources>

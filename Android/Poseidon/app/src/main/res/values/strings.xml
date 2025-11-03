@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Poseidon - Drone Marin</string>
+    <string name="text_permissions_granted">Permissions accordées</string>
+    <string name="splash_logo_desc">Drone Marin</string>
+    <string name="connexion_poseidon">Connexion</string>
+    <string name="bt_d_connect">BT: Déconnecté</string>
+
+</resources>
