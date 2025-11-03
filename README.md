@@ -12,7 +12,7 @@ OBJECTIF
 - Réaliser des prélèvements avec éprouvettes IFREMER.
 - Transmettre les données en temps réel.
 - Disposer d’une caméra embarquée.
-- 
+ 
 Spécifications Techniques
 Dimensions : 1,25 m / 10 kg max.
 Semi-immergé
